@@ -101,8 +101,8 @@
             </AutoLogon>
             <FirstLogonCommands>
                 <SynchronousCommand wcm:action="add">
-                    <CommandLine>cmd.exe /c powershell -Command "Invoke-Expression $(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/azorac/windowsImging/master/post-install.ps1' -UseBasicParsing).Content;pause"</CommandLine>
-                    <Description>Enable PS remoting</Description>
+                    <CommandLine>cmd.exe /c powershell -Command "Invoke-Expression $(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/azorac/windowsImging/master/post-install.ps1' -UseBasicParsing).Content"</CommandLine>
+                    <Description>Post install</Description>
                     <Order>1</Order>
                 </SynchronousCommand>
             </FirstLogonCommands>
